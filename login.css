@@ -1,0 +1,124 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(images/img3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+section {
+    position: relative;
+    background-color: transparent;
+    max-width: 400px;
+    border: 3px solid rgb(155, 15, 15);
+    border-radius: 25px;
+    backdrop-filter: blur(25px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 80px;
+}
+h1 {
+    font-size: 44px;
+    text-align: center;
+    color: rgb(206, 58, 58);
+    font-family: broadway;
+}
+.inputbox {
+    max-width: 310px;
+    position: relative;
+    margin: 30px 0;
+    border-bottom: 2px solid whitesmoke;
+}
+.inputbox label {
+    position: absolute;  
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: whitesmoke;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all 0.5 ease-in-out;
+}
+.inputbox input {
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 35px 0 5px;
+    color: lightgreen;
+}
+.forget {
+    margin: 25px 0;
+    font-size: 0.95rem;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+.forget label {
+    display: flex;
+    align-items: center;
+}
+.forget label input {
+    margin-right: 5px;
+}
+.forget a {
+    font-weight: 550;
+    text-decoration: none;
+    color: rgb(206, 58, 58);
+}
+.forget a:hover {
+    text-decoration: overline underline;
+}
+button {
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 650px;
+    background-color: rgb(206, 58, 58);
+    color: black;
+    font-family: broadway;
+    transition: all 0.5 ease;
+}
+button:hover {
+    background-color: grey;
+}
+.reg {
+    font-size: 0.9rem;
+    color: whitesmoke;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.reg p a {
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(206, 58, 58);
+}
+.reg p a:hover {
+    text-decoration: underline overline;
+}
+input:focus~label,input:valid~label{
+    top: 3px;
+}
+.back a {
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(206, 58, 58);
+}
+.back a:hover {
+    text-decoration: underline overline;
+}
