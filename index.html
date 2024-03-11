@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+        margin: 5px;
+        padding: 5px;
+    }
+</style>
+
+<body>
+    <div>
+        <div style="display: flex; justify-content: space-between;">
+            <h1>Activity 3</h1>
+            <h1>Scoreboard v1</h1>
+        </div>
+        <div style="display: flex; justify-content: space-around;">
+            <div style="display: flex; flex-direction: column;">
+                <div style="display: flex;">
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <div style="border-color: black; background-color: red; padding-top: 2rem; width: 10rem; height: 8rem; text-align: center;">
+                    <h2>Team 1</h2>
+                    <h1  id="team1">0</h3>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <div style="display: flex;">
+                </div>
+                <div style="border-color: black; padding-top: 2rem; background-color: blue; width: 10rem; height: 8rem; text-align: center;" >
+                    <h2>Team 2</h2>
+                    <h1 id="team2">0</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <h1>Made by Allesandro R. De Jesus</h1>
+            </div>
+        
+        <script>
+            const scoret1 = document.getElementById('team1');
+            const scoret2 = document.getElementById('team2');
+
+            document.addEventListener('keypress', function(e){
+                if(e.key == 'q'){
+                    scoret1.innerText = Number(scoret1.innerText) + 1;
+                }
+            })
+            document.addEventListener('keypress', function(e){
+                if(e.key == 'o'){
+                    scoret2.innerText = Number(scoret2.innerText) + 1;
+                }
+            })
+
+            document.addEventListener('keypress', function(e){
+                if(e.key == 'z'){
+                    scoret1.innerText = Number(scoret1.innerText) - 1;
+                }
+            })
+            document.addEventListener('keypress', function(e){
+                if(e.key == 'l'){
+                    scoret2.innerText = Number(scoret2.innerText) - 1;
+                }
+            })
+
+
+        </script>
+</body>
